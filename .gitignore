@@ -1,0 +1,29 @@
+# Go
+/bin/
+/obj/
+/vendor/
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de Go mod cache
+/go.mod
+/go.sum
+
+# Archivos de compilación
+*.exe
+*.out
+*.test
+
+# Archivos de logs
+*.log
+
+# Configuraciones personales de entorno
+.env
