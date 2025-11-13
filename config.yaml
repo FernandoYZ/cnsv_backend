@@ -1,0 +1,26 @@
+database:
+  host: "localhost"
+  port: 5432
+  name: "cnsv_sistema"
+  user: "postgres"
+  sslmode: "disable"
+  pool:
+    min: 5
+    max: 30
+    idle_timeout_ms: 10000
+    connection_timeout_ms: 5000
+
+jwt:
+  expiration_seconds: 3600
+  refresh_token_expiration_seconds: 604800
+
+security:
+  hash_salt_rounds: 10
+
+app:
+  # pgapp_user_id: "myapp.user_id"
+  # pgapp_ip_address: "myapp.ip_address"
+  port: 8080
+  max_connections: 100
+  log_level: debug
+  app_env: development
