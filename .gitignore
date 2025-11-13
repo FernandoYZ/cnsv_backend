@@ -1,29 +1,44 @@
-# Go
+# Binarios generados
 /bin/
-/obj/
+/build/
+/out/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+
+# Archivos de dependencias (modulos de Go)
 /vendor/
 
-# Archivos generados por el sistema operativo
-.DS_Store
-Thumbs.db
+# Configuraciones de Go
+/.idea/
+/.vscode/
+/*.vscode/
 
-# IDEs y editores
-.idea/
-.vscode/
+# Configuraciones específicas del sistema operativo
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Archivos temporales de editores de texto
 *.swp
-*.swo
+*~
+*.bak
+*.tmp
 
-# Archivos de Go mod cache
-/go.mod
-/go.sum
-
-# Archivos de compilación
-*.exe
-*.out
+# Archivos de test de Go
+/testdata/
 *.test
+
+# Archivos de cache
+*.cache
 
 # Archivos de logs
 *.log
+/logs/
 
-# Configuraciones personales de entorno
+# Archivos de configuración con secretos (ej. .env)
 .env
+.env.local
+.env.development.local
+.env.test.local
